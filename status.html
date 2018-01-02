@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id-ID" prefix="og: http://ogp.me/ns#">
+<head>
+<title>MULYANI HOTSPOT - Status</title>
+<style type="text/css">
+<!--
+.style8 {color: #00CC00}
+.style9 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: large;
+}
+.style11 {font-size: 36}
+-->
+</style>
+$(if refresh-timeout)
+<meta http-equiv="refresh" content="$(refresh-timeout-secs)" />
+$(endif)
+<meta charset="UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="viewport" content="width=device-width" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="shortcut icon" href="iklan/favicon.png" />
+<!--[if lt IE 9]><script type="text/javascript" src="html5.js"></script><![endif]-->
+<link rel="stylesheet" href="genericons/genericons.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+	
+<script language="JavaScript">
+<!--
+$(if advert-pending == 'yes')
+    var popup = '';
+    function focusAdvert() {
+	if (window.focus) popup.focus();
+    }
+    function openAdvert() {
+	popup = open('$(link-advert)', 'hotspot_advert', '');
+	setTimeout("focusAdvert()", 1000);
+    }
+$(endif)
+    function openLogout() {
+	if (window.name != 'hotspot_status') return true;
+        open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+
+
+
+<!-- Image slider start -->
+
+	<script type="text/javascript" src="js/jQuery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+<style type="text/css">
+	* { margin: 0; padding: 0; }
+	img { max-width: 100%; }
+	.cycle-slideshow {
+		width: 100%;
+		max-width: 960px;
+		display: block;
+		position: relative;
+		margin: 20px auto;
+		overflow: hidden;
+	}
+	.cycle-prev, .cycle-next {
+		font-size: 200%;
+		color: #fff;
+		display: block;
+		position: absolute;
+		top: 50%;
+		z-index: 9999;
+		cursor: pointer;
+		margin-top: -16px;
+	}
+	.cycle-prev { left: 42px; }
+	.cycle-next { right: 62px; }
+	.cycle-pager {
+		position: absolute;
+		width: 100%;
+		height: 10px;
+		bottom: 10px;
+		z-index: 9999;
+		text-align: center;
+	}
+	.cycle-pager span {
+		text-indent: 100%;
+		top: 100px;
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		margin: 0 10px;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	.cycle-pager-active { background-color: #fff; }
+</style>
+<!-- Image slider end -->
+
+</head>
+
+<body class="page-status" bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0"$(if advert-pending == 'yes') onLoad="openAdvert()"$(endif)>
+<div class="page">
+	<div class="page">
+	  <header class="site-header"> 
+	    <div align="center"><a href="/"><img src="iklan/Raffa-Banner.png" width="464px" height="146px" alt="logo"></a></img></div>
+	    <h2 class="style11">Internet sepuasnya, bebas kuota, harga lebih terjangkau</h2>
+			<marquee class="news-text" direction="left" scrollamount="3.5" onMouseOver="this.stop()" onMouseOut="this.start()">
+			<font color="blue">Menerima Service Komputer/Laptop, Install Ulang Windows, Download Software/Games/Lagu/Video, dan Cetak Nama Di Amplop. <a href="package.html">KLIK DISINI</a>.
+			</marquee>  
+	  </header>
+	<div class="main-menu style11">
+		<a style="border-bottom:2px dotted #24890d" class="status" href="login.html">STATUS</a>
+		<a class="package" href="package.html">LAYANAN</a>
+		<a class="coverage" href="coverage.html">JANGKAUAN</a>
+		<a class="contact" href="contact.html">KONTAK</a>	
+	</div>
+
+	
+	<div class="site-content">
+		<div class="page-title style11">
+			<h1 align="center">HALAMAN DETAIL STATUS MEMBER</h1>
+		</div>
+		<div class="entry-content">
+			    <div align="center" class="style11">$(if login-by == 'trial')				</div>
+			    <p align="center" class="style11">Kamu masuk sebagai pengguna Gratisan!<br/>Untuk menikmati durasi lebih lama,<br/>Silakan lihat layanan paket internet yg tersedia <a href="package.html">DISINI!</a><br/><br/>Silahkan cek kecepatan internet anda, klik link dibawah ini! <br/><a href="http://www.fast.com/" target="_new">www.fast.com</a></p>	
+		<br/>
+		
+		<div class="entry-content">
+
+		<!--	<a href="img/tarif1.jpg" target="_blank"><img src="img/tarif1.jpg" /></a>  -->
+		<!-- SLIDER START-->
+			<div class="cycle-slideshow">
+				
+				<span class="cycle-prev">&#9001;</span> <!-- Untuk membuat tanda panah di kiri slider -->
+				<span class="cycle-next">&#9002;</span> <!-- Untuk membuat tanda panah di kanan slider -->
+				<span class="cycle-pager"></span>  <!-- Untuk membuat tanda bulat atau link pada slider -->
+				<img src="iklan/1.jpg" alt="Gambar Pertama">
+				<img src="iklan/2.jpg" alt="Gambar Kedua">
+				<img src="iklan/3.jpg" alt="Gambar Ketiga">
+				<img src="iklan/4.jpg" alt="Gambar Keempat">
+				<p style="font-size:12px;font-style:italic;text-align:center;">Pasang iklan hanya Rp.15.000,-/bulan</p>
+			</div>
+		<!-- SLIDER END -->	
+		</div>
+   </div>
+   
+	<footer class="site-footer">
+	<center>Didukung oleh: </center>
+		<div class="powered-by">
+			<img height="33" src="img/speedy-broadband.png" />
+			<img height="32" src="img/Telkom-Indihome.png" />
+			<img height="32" src="img/dnsbersih_logo.png" />
+			<img height="33" src="img/wifi.png" />
+			<img height="30" src="img/mikrotik.png" />
+		</div>
+
+	  <p>Copyright &copy;  MULYANI HOTSPOT<br />
+	  <span style="color:#888;font-size:10px">Re-Design by <a style="color:#888;text-decoration:none" href="http://mulyani.hotspot.com/" title="Sharing for everyone" target="_new">Dicka Ariptian R</a></span></p>
+	</footer>
+
+
+<script> 
+    window.intergramId = "412648264";
+    window.intergramCustomizations = {
+        titleClosed: 'Buka Chat',
+        titleOpen: 'Tutup Chat',
+        introMessage: 'Hallo Tamu!!! <br/>Jika ada pertanyaan, Kritik, dan Saran. <br/> Tinggalkan disini ya Kakz.. ^_^',
+        autoResponse: 'Pesan anda sudah terkirim, <br/>Harap tunggu yang punya RAFFA HOTSPOT membalasnya ya!!!.',
+        autoNoResponse: 'Pesan kamu yang dikirim satu menit yang lalu ' +
+                        'tidak ada tanggapan yang diterima dari pemilik RAFFA HOTSPOT ' +
+                        'atau yang punya RAFFA HOTSPOT sedang diluar jangkauan / Offline.',
+        mainColor: "#d01bad", // Bisa pakai warna yang didukung css 'red', 'rgb (255,87,34)', dll
+        alwaysUseFloatingButton: true // Gunakan tombol mengambang mobile juga pada layar besar
+    };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+  	</div> 
+</div> 
+<div align="center" class="style11">$(elif login-by != 'mac')				
+</div>
+	<p align="center" class="style11">Selamat datang  
+		<font color="blue"><b>$(username)!</b></font> <br/><br/>Terima kasih sudah menggunakan <font color="blue"><b>MULYANI.HOTSPOT.COM</b></font><br/>Sebagai sumber sarana internet untuk kebutuhan dalam mencari berbagai informasi melalui jaringan internet. <br/>Silahkan cek kecepatan internet anda, klik link dibawah ini! <br/>
+		<a href="http://www.fast.com/" target="_new">www.fast.com</a></p>
+<div align="center">
+         <!-- <p class="style9 style11"><span class="style12"><a style="text-decoration:none" href="https://play.google.com/store/apps/details?id=com.vitiglobal.cashtree&referrer=utm_source%3Dcashtree%26utm_medium%3Dinvite%26i%3Db99e6c" title="Sharing for everyone"target="_new">KLIK DISINI </a></span></div><br/><br/>
+		 -->
+		 <!-- <p class="style9 style11"><span class="style12"><a style="text-decoration:none" href="#" title="Sharing for everyone" target="_new">PULSA GRATIS<br/>KLIK DISINI</a></span></div><br/> -->
+		 
+
+		 
+		 <div align="center">
+          <p class="style9 style11"><span class="style12">DETAIL AKUN KAMU</span></div>
+	            <form action="$(link-logout)?erase-cookie=true" name="logout" onSubmit="return openLogout()">
+				<table>
+					<tr><td>ID Pengguna</td><td>$(username)</td></tr>
+					<tr><td>Alamat IP</td><td>$(ip)</td></tr>
+					<tr><td>Kode Register</td><td>$(mac)</td></tr>
+					<tr><td>Total Up/Down</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+				$(if session-time-left)
+					<tr><td>Waktu Terpakai / Sisa Waktu</td><td>$(uptime) / $(session-time-left)</td></tr>
+				$(else)
+					<tr><td>Waktu Terpakai</td><td>$(uptime)</td></tr>
+				$(endif)
+				$(if blocked == 'yes')
+					<tr><td>Status</td><td><span style="color: #FF8080"><a href="$(link-advert)" target="hotspot_advert">Iklan</a> *Wajib</span></td></tr>
+				$(elif refresh-timeout)
+					<tr><td>Status Pembaharuan</td><td>$(refresh-timeout)</td></tr>
+				$(endif)
+				</table>
+				$(if login-by-mac != 'yes')
+				<center><input type="submit" value="Log off"></center>
+				$(endif)
+			</form>
+	  </div>
+	  	<div class="entry-content"><br/>
+
+		<!--	<a href="img/tarif1.jpg" target="_blank"><img src="img/tarif1.jpg" /></a>  -->
+		<!-- SLIDER START-->
+			<div class="cycle-slideshow">
+				<span class="cycle-prev">&#9001;</span> <!-- Untuk membuat tanda panah di kiri slider -->
+				<span class="cycle-next">&#9002;</span> <!-- Untuk membuat tanda panah di kanan slider -->
+				<span class="cycle-pager"></span>  <!-- Untuk membuat tanda bulat atau link pada slider -->
+				<img src="iklan/1.jpg" alt="Gambar Pertama">
+				<img src="iklan/2.jpg" alt="Gambar Kedua">
+				<img src="iklan/3.jpg" alt="Gambar Ketiga">
+				<img src="iklan/4.jpg" alt="Gambar Keempat">
+				<p style="font-size:12px;font-style:italic;text-align:center;">Pasang iklan hanya Rp.15.000,-/bulan</p>
+			</div>
+			
+		<!-- SLIDER END -->	
+		</div>
+	</div>
+</div>
+	<footer class="site-footer">
+	<center>Didukung oleh: </center>
+		<div class="powered-by">
+			<img height="33" src="img/speedy-broadband.png" />
+			<img height="32" src="img/Telkom-Indihome.png" />
+			<img height="32" src="img/dnsbersih_logo.png" />
+			<img height="33" src="img/wifi.png" />
+			<img height="30" src="img/mikrotik.png" />
+		</div>
+
+	  <p>Copyright &copy;  MULYANI HOTSPOT<br />
+	  <span style="color:#888;font-size:10px">Re-Design by <a style="color:#888;text-decoration:none" href="http://mulyani.hotspot.com/" title="Sharing for everyone" target="_new">Dicka Ariptian R</a></span></p>
+	</footer>
+</div>
+<script> 
+    window.intergramId = "294156268";
+    window.intergramCustomizations = {
+        titleClosed: 'Buka Chat',
+        titleOpen: 'Tutup Chat',
+        introMessage: 'Hallo Pelanggan! Ada yang bisa kami bantu? Jika ada pertanyaan, Kritik, dan Saran, tinggalkan disini ya!',
+        autoResponse: 'Pesan anda sudah terkirim, Harap tunggu yang punya MULYANI HOTSPOT membalasnya ya!!!.',
+        autoNoResponse: 'Pesan kamu yang dikirim satu menit yang lalu ' +
+                        'tidak ada tanggapan yang diterima dari pemilik MULYANI HOTSPOT ' +
+                        'atau yang punya MULYANI HOTSPOT sedang diluar jangkauan / Offline.',
+        mainColor: "#d01bad", // Bisa pakai warna yang didukung css 'red', 'rgb (255,87,34)', dll
+        alwaysUseFloatingButton: true // Gunakan tombol mengambang mobile juga pada layar besar
+    };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+</body>
+
+</html>

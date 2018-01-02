@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id-ID" prefix="og: http://ogp.me/ns#">
+<head>
+<title>MULYANI HOTSPOT - Login</title>
+<meta charset="UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="viewport" content="width=device-width" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="shortcut icon" href="iklan/favicon.png" />
+<!--[if lt IE 9]><script type="text/javascript" src="html5.js"></script><![endif]-->
+<link rel="stylesheet" href="genericons/genericons.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+<!--
+.style2 {font-size: 12px}
+-->
+</style>
+
+<!-- Image slider start -->
+
+	<script type="text/javascript" src="js/jQuery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+<style type="text/css">
+	* { margin: 0; padding: 0; }
+	img { max-width: 100%; }
+	.cycle-slideshow {
+		width: 100%;
+		max-width: 960px;
+		display: block;
+		position: relative;
+		margin: 20px auto;
+		overflow: hidden;
+	}
+	.cycle-prev, .cycle-next {
+		font-size: 200%;
+		color: #fff;
+		display: block;
+		position: absolute;
+		top: 50%;
+		z-index: 9999;
+		cursor: pointer;
+		margin-top: -16px;
+	}
+	.cycle-prev { left: 42px; }
+	.cycle-next { right: 62px; }
+	.cycle-pager {
+		position: absolute;
+		width: 100%;
+		height: 10px;
+		bottom: 10px;
+		z-index: 9999;
+		text-align: center;
+	}
+	.cycle-pager span {
+		text-indent: 100%;
+		top: 100px;
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		margin: 0 10px;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	.cycle-pager-active { background-color: #fff; }
+</style>
+<!-- Image slider end -->
+</head>
+
+<body class="page-login">
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+<div class="page">
+	  <header class="site-header"> 
+	    <div align="center"><a href="/"><img src="iklan/Raffa-Banner.png" width="464px" height="146px" alt="logo"></a></img></div>
+	    <h2 class="style11">Internet sepuasnya, bebas kuota, harga lebih terjangkau</h2>
+			<marquee class="news-text" direction="left" scrollamount="3.5" onMouseOver="this.stop()" onMouseOut="this.start()">
+			<font color="blue">Menerima Service Komputer/Laptop, Install Ulang Windows, Download Software/Games/Lagu/Video dan Cetak Nama Di Amplop. <a href="package.html">KLIK DISINI</a>.
+			</marquee>  
+	  </header>
+
+	<div class="main-menu">
+		<a style="border-bottom:1px dotted #24890d" class="login" href="login.html">BERANDA</a>
+		<a class="package" href="package.html">LAYANAN</a>
+		<a class="coverage" href="coverage.html">JANGKAUAN</a>
+		<a class="contact" href="contact.html">KONTAK</a>
+	</div>
+
+	<div class="site-content">
+		<div class="entry-content">
+		  <p style="text-align:center">Silahkan aktivasi kode voucher kamu untuk terhubung ke internet.<br />
+	      <span style="color:#767676;font-size:12px">Atau untuk mencoba gratis selama 10 menit, klik <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">DISINI</a></span></p>
+		  <div class="usr-login">
+			<!--	$(if error)<p class="error">$(error)</p>$(endif) -->
+				
+$(if error) <div class="alert alert-dismissible alert-danger">
+<script type="text/javascript">var error = "$(error)";
+if (error == "Paket Anda Sudah Expire")
+{window.location = "/expired.html";}else {document.write("$(error)");} 
+</script> </div> $(endif)
+
+				<form name="login" action="$(link-login-only)" method="post"
+					$(if chap-id) onSubmit="return doLogin()" $(endif)>
+					<div align="center">
+					<input type="hidden" name="dst" value="$(link-orig)" />
+					<input type="hidden" name="popup" value="true" />
+
+					<span class="style2">Masukkan<em> kode voucher</em> kamu untuk mengaktifkan koneksi internet kamu pada kolom dibawah </span>ini.</div>
+					<table width="210" style="width:210px;margin:0 auto">
+						<tr>
+						  <td width="240"><div align="center">
+  <input style="text-transform: lowercase;" type="hidden" placeholder="username" name="username" id="textid1">
+  <input style="text-transform: lowercase;" type="text" placeholder="voucher id" name="password" id="textid2">
+						        </div>
+					  </tr>
+					</table>
+					<center>
+					  <p>
+					    <input type="submit" value="Aktivasi Voucher" />
+					  </p><br/><br/>
+					</center>
+				</form>
+		  </div>
+	  	<div class="entry-content">
+		<!--	<a href="img/tarif1.jpg" target="_blank"><img src="img/tarif1.jpg" /></a>  -->
+		<!-- SLIDER START-->
+			<div class="cycle-slideshow">
+				<span class="cycle-prev">&#9001;</span> <!-- Untuk membuat tanda panah di kiri slider -->
+				<span class="cycle-next">&#9002;</span> <!-- Untuk membuat tanda panah di kanan slider -->
+				<span class="cycle-pager"></span>  <!-- Untuk membuat tanda bulat atau link pada slider -->
+				<img src="iklan/1.jpg" alt="Gambar Pertama">
+				<img src="iklan/2.jpg" alt="Gambar Kedua">
+				<img src="iklan/3.jpg" alt="Gambar Ketiga">
+				<img src="iklan/4.jpg" alt="Gambar Keempat">
+				<p style="font-size:12px;font-style:italic;text-align:center;">Pasang iklan hanya Rp.15.000,-/bulan</p>
+			</div>
+		<!-- SLIDER END -->	
+			
+		</div>
+		  </div>
+
+	</div>
+
+	<footer class="site-footer">
+	<center>Didukung oleh: </center>
+		<div class="powered-by">
+			<img height="33" src="img/speedy-broadband.png" />
+			<img height="32" src="img/Telkom-Indihome.png" />
+			<img height="32" src="img/dnsbersih_logo.png" />
+			<img height="33" src="img/wifi.png" />
+			<img height="30" src="img/mikrotik.png" />
+		</div>
+
+	  <p>Copyright &copy;  MULYANI HOTSPOT<br />
+	  <span style="color:#888;font-size:10px">Re-Design by <a style="color:#888;text-decoration:none" href="http://mulyani.hotspot.com/" title="Sharing for everyone" target="_new">Dicka Ariptian R</a></span></p>
+	</footer>
+</div>
+
+<!--<marquee class="info-text" direction="left" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">Layanan internet nirkabel dengan kecepatan up to 1mb/s. Untuk info, <a href="package.html">klik di sini</a>.</marquee>-->
+<script type="text/javascript">
+var input2 = document.getElementById('textid1');
+var input1 = document.getElementById('textid2');
+var updateInputs = function () {
+input2.value = input1.value;
+}
+if (input1.addEventListener) {
+input1.addEventListener('keyup', function () {
+updateInputs();
+});
+} else if (input1.attachEvent) { // support IE
+input1.attachEvent('onkeyup', function () {
+updateInputs();
+});
+}
+</script>
+<script> 
+    window.intergramId = "294156268";
+    window.intergramCustomizations = {
+        titleClosed: 'Buka Chat',
+        titleOpen: 'Tutup Chat',
+        introMessage: 'Hallo Pelanggan! Ada yang bisa kami bantu? Jika ada pertanyaan, Kritik, dan Saran, tinggalkan disini ya!',
+        autoResponse: 'Pesan anda sudah terkirim, Harap tunggu yang punya MULYANI HOTSPOT membalasnya ya!!!.',
+        autoNoResponse: 'Pesan kamu yang dikirim satu menit yang lalu ' +
+                        'tidak ada tanggapan yang diterima dari pemilik MULYANI HOTSPOT ' +
+                        'atau yang punya MULYANI HOTSPOT sedang diluar jangkauan / Offline.',
+        mainColor: "#d01bad", // Bisa pakai warna yang didukung css 'red', 'rgb (255,87,34)', dll
+        alwaysUseFloatingButton: true // Gunakan tombol mengambang mobile juga pada layar besar
+    };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+</body>
+
+</html>

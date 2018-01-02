@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id-ID" prefix="og: http://ogp.me/ns#">
+<head>
+<title>MULYANI HOTSPOT - Logout</title>
+<style type="text/css">
+<!--
+.style8 {color: #00CC00}
+-->
+</style>
+$(if refresh-timeout)
+<meta http-equiv="refresh" content="$(refresh-timeout-secs)" />
+$(endif)
+<meta charset="UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="viewport" content="width=device-width" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="shortcut icon" href="iklan/favicon.png" />
+<!--[if lt IE 9]><script type="text/javascript" src="html5.js"></script><![endif]-->
+<link rel="stylesheet" href="genericons/genericons.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script language="JavaScript">
+<!--
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-logout)', 'logout?erase-cookie=true', '');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+<!-- Image slider start -->
+
+	<script type="text/javascript" src="js/jQuery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+<style type="text/css">
+	* { margin: 0; padding: 0; }
+	img { max-width: 100%; }
+	.cycle-slideshow {
+		width: 100%;
+		max-width: 960px;
+		display: block;
+		position: relative;
+		margin: 20px auto;
+		overflow: hidden;
+	}
+	.cycle-prev, .cycle-next {
+		font-size: 200%;
+		color: #fff;
+		display: block;
+		position: absolute;
+		top: 50%;
+		z-index: 9999;
+		cursor: pointer;
+		margin-top: -16px;
+	}
+	.cycle-prev { left: 42px; }
+	.cycle-next { right: 62px; }
+	.cycle-pager {
+		position: absolute;
+		width: 100%;
+		height: 10px;
+		bottom: 10px;
+		z-index: 9999;
+		text-align: center;
+	}
+	.cycle-pager span {
+		text-indent: 100%;
+		top: 100px;
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		margin: 0 10px;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	.cycle-pager-active { background-color: #fff; }
+</style>
+<!-- Image slider end -->
+</head>
+
+<body class="page-logout">
+<div class="page">
+	<header class="site-header">
+	    <div align="center"><a href="/"><img src="iklan/Raffa-Banner.png" width="464px" height="146px" alt="logo"></a></img></div>
+	    <h2 class="style11">internet sepuasnya, bebas kuota, harga lebih terjangkau</h2>
+			<marquee class="news-text" direction="left" scrollamount="3.5" onMouseOver="this.stop()" onMouseOut="this.start()">
+			<font color="blue">Menerima Service Komputer/Laptop, Install Ulang Windows, Download Software/Games/Lagu/Video, dan Cetak Nama Di Amplop. <a href="package.html">KLIK DISINI</a>.
+			</marquee>
+    </header>
+	<div class="main-menu">
+		<a class="login" href="login.html">BERANDA</a>
+		<a class="package" href="package.html">LAYANAN</a>
+		<a class="coverage" href="coverage.html">JANGKAUAN</a>
+		<a class="contact" href="contact.html">KONTAK</a>
+	</div>
+
+	<div class="site-content">
+	  <div class="page-title">
+			<h1 align="center">$(username) <br/>Kamu Berhasil Logout</h1>
+	  </div>
+		<div class="entry-content">
+			<p align="center">Kamu telah berhasil logout. Silahkan login kembali untuk menikmati layanan internet wifi kami. Terima kasih. </p>
+			<table class="tabula" border="1">  
+				<tr><td>ID Pengguna</td><td>$(username)</td></tr>
+				<tr><td>Alamat IP</td><td>$(ip)</td></tr>
+				<tr><td>Kode Register</td><td>$(mac)</td></tr>
+				<tr><td>Waktu Terpakai</td><td>$(uptime)</td></tr>
+				$(if session-time-left)
+				<tr><td>Sisa Waktu</td><td>$(session-time-left)</td></tr>
+				$(endif)
+				<tr><td>Total Up/Down:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+			</table>
+			<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+				<center><input type="submit" value="log in"><center>
+			</form>
+		</div>
+	</div>
+
+	  	<div class="entry-content">
+		<!--	<a href="img/tarif1.jpg" target="_blank"><img src="img/tarif1.jpg" /></a>  -->
+		<!-- SLIDER START-->
+			<div class="cycle-slideshow">
+				<span class="cycle-prev">&#9001;</span> <!-- Untuk membuat tanda panah di kiri slider -->
+				<span class="cycle-next">&#9002;</span> <!-- Untuk membuat tanda panah di kanan slider -->
+				<span class="cycle-pager"></span>  <!-- Untuk membuat tanda bulat atau link pada slider -->
+				<img src="iklan/1.jpg" alt="Gambar Pertama">
+				<img src="iklan/2.jpg" alt="Gambar Kedua">
+				<img src="iklan/3.jpg" alt="Gambar Ketiga">
+				<img src="iklan/4.jpg" alt="Gambar Keempat">
+				<p style="font-size:12px;font-style:italic;text-align:center;">Pasang iklan hanya Rp.15.000,-/bulan</p>
+			</div>
+		<!-- SLIDER END -->	
+			
+		</div>
+	
+	<footer class="site-footer">
+	<center>Didukung oleh: </center>
+		<div class="powered-by">
+			<img height="33" src="img/speedy-broadband.png" />
+			<img height="32" src="img/Telkom-Indihome.png" />
+			<img height="32" src="img/dnsbersih_logo.png" />
+			<img height="33" src="img/wifi.png" />
+			<img height="30" src="img/mikrotik.png" />
+		</div>
+
+	  <p>Copyright &copy;  MULYANI HOTSPOT<br />
+	  <span style="color:#888;font-size:10px">Re-Design by <a style="color:#888;text-decoration:none" href="http://mulyani.hotspot.com/" title="Sharing for everyone" target="_new">Dicka Ariptian R</a></span></p>
+	</footer>
+</div>
+<script> 
+    window.intergramId = "294156268";
+    window.intergramCustomizations = {
+        titleClosed: 'Buka Chat',
+        titleOpen: 'Tutup Chat',
+        introMessage: 'Hallo Pelanggan! Ada yang bisa kami bantu? Jika ada pertanyaan, Kritik, dan Saran, tinggalkan disini ya!',
+        autoResponse: 'Pesan anda sudah terkirim, Harap tunggu yang punya MULYANI HOTSPOT membalasnya ya!!!.',
+        autoNoResponse: 'Pesan kamu yang dikirim satu menit yang lalu ' +
+                        'tidak ada tanggapan yang diterima dari pemilik MULYANI HOTSPOT ' +
+                        'atau yang punya MULYANI HOTSPOT sedang diluar jangkauan / Offline.',
+        mainColor: "#d01bad", // Bisa pakai warna yang didukung css 'red', 'rgb (255,87,34)', dll
+        alwaysUseFloatingButton: true // Gunakan tombol mengambang mobile juga pada layar besar
+    };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+</body>
+
+</html>
